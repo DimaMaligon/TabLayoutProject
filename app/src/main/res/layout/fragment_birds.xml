@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentBirds">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/birdConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6D326"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="219dp">
+
+        <ImageView
+            android:id="@+id/imageBird"
+            android:layout_width="320dp"
+            android:layout_height="176dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginEnd="25dp"
+            android:contentDescription="bird"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bird" />
+
+        <TextView
+            android:id="@+id/textBird"
+            android:layout_width="353dp"
+            android:layout_height="202dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Что мы знаем о птицах – это в первую очередь наши друзья. Если взглянуть с другой стороны, они приносят пользу, выходит они - помощники. Благодаря птицам, на огородах намного меньше вредоносных насекомых. Сейчас мы поговорим о птицах как помощник для огородника. Птицы любят поедать семена, этим они упрощают работу людям, имеющим свои земельные участки. Также они помогают некоторым деревьям, улучшают их плодородность, поедая плоды таких деревьев как вишня, рябина есть и другие растения. Мякоть в желудке растворяется, косточка с плода выйдет со временем и на том месте, где упала косточка, вырастает дерево."
+            app:layout_constraintEnd_toEndOf="@+id/imageBird"
+            app:layout_constraintStart_toStartOf="@+id/imageBird"
+            app:layout_constraintTop_toBottomOf="@+id/imageBird" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

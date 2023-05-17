@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/birdConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F88824">
+
+        <ImageView
+            android:id="@+id/imageDog"
+            android:layout_width="320dp"
+            android:layout_height="176dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dog" />
+
+        <TextView
+            android:id="@+id/textDog"
+            android:layout_width="334dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="10.dp"
+            android:paddingRight="10.dp"
+            android:text="Процесс происхождения домашних собак включает дивергенцию собаки от волка на уровне ДНК, её одомашнивание, формирование различных типов и пород. Собаки принадлежат к роду Canis, объединяющему волкоподобных хищников семейства псовые (Canidae), это первый и единственный полностью одомашненный крупный хищник"
+            app:layout_constraintEnd_toEndOf="@+id/imageDog"
+            app:layout_constraintStart_toStartOf="@+id/imageDog"
+            app:layout_constraintTop_toBottomOf="@+id/imageDog" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

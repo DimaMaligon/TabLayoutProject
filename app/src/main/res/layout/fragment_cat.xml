@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentCat">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/birdConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9D63ED">
+
+        <ImageView
+            android:id="@+id/imageCat"
+            android:layout_width="320dp"
+            android:layout_height="176dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cat" />
+
+        <TextView
+            android:id="@+id/textCat"
+            android:layout_width="381dp"
+            android:layout_height="202dp"
+            android:layout_marginTop="32dp"
+            android:text="Здравствуй, дорогой посетитель. Мы уже знаем, что у нас с вами много общего – у людей, любящих кошек, всегда много общего. Не случайно вы зашли к нам, значит, вас тоже привлекают эти удивительные создания – кошки. Такие знакомые и такие загадочные, грациозные и изящные, нежные и ласковые, смешные и забавные. Они не перестают удивлять нас, а мы не перестаем восхищаться и любоваться ими."
+            app:layout_constraintEnd_toEndOf="@+id/imageCat"
+            app:layout_constraintStart_toStartOf="@+id/imageCat"
+            app:layout_constraintTop_toBottomOf="@+id/imageCat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
